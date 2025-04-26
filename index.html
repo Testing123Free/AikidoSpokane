@@ -1,56 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aikido Spokane</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 2rem;
-      font-family: Georgia, serif;
-      background-color: #fffaf3;
-      color: #333;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-    }
-
-    img {
-      max-width: 400px;
-      width: 90%;
-      height: auto;
-      margin-bottom: 2rem;
-    }
-
-    h1 {
-      font-size: 2rem;
-      margin: 0.5rem 0;
-    }
-
-    p {
-      font-size: 1.2rem;
-      margin: 0.3rem 0;
-    }
-
-    a {
-      color: #333;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aikido Spokane</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f1e7;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #000;
+            color: #f5f1e7;
+            padding: 20px;
+            text-align: center;
+        }
+        header nav a {
+            color: #f5f1e7;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        #hero img {
+            width: 100%;
+            height: auto;
+        }
+        section {
+			background-color: #dbcaa4;
+            padding: 2rem;
+            margin: 20px auto;
+            max-width: 1000px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        section img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 1rem;
+        }
+        footer {
+            background-color: #000;
+            color: #f5f1e7;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+        ul {
+            list-style-type: square;
+        }
+        blockquote {
+            font-style: italic;
+            margin: 20px;
+            padding: 10px;
+            background-color: #eae3d2;
+            border-left: 5px solid #b4975a;
+        }
+		.schedule-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+		        .schedule {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            font-size: 1.2rem;
+            color: #333;
+        }
+        .schedule li {
+            margin: 10px 0;
+        }
+        .schedule img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+		        .contact-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .contact-info {
+            max-width: 50%;
+        }
+        .contact-info h2 {
+            margin-bottom: 10px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .contact-image {
+            width: 40%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
-  <img src="logo.png" alt="Aikido Spokane Logo" />
-  <h1>Aikido Spokane</h1>
-  <p>Traditional Aikido Training in Spokane, WA</p>
-  <p>Call or text: <strong>(509) 270-4722</strong></p>
-  <p>Email: <a href="mailto:info@aikidospokane.com">info@aikidospokane.com</a></p>
-</body>
-</html>
+    <header>
+        <h1>Aikido: The Art of Peace</h1>
+    </header>
+
+    <section>
+        <img src="AikidoBushin.jpg" alt="Aikido demonstration" style="display: block; margin: 0 auto;">
+        <p>Aikido is a Japanese martial art that teaches students to redirect aggression through utilizing an attackers’ own movement and energy.</p>
+        <p>Training in blending, posture, centering, and balance helps develop non-confrontational but effective martial techniques in conflict resolution. Aikido promotes protection of one’s self and others through principles of respect, harmony, cooperation and physical training.</p>
+        <p>A serious martial discipline, Aikido is designed to promote personal growth &amp; integration as well as developing a strong &amp; harmonious spirit through both physical &amp; mental training in martial technique.</p>
+
+        <blockquote>
+            
+
+ "There is a progression from bu-jutsu (martial techniques) to budo (martial way)to bushin (martial spirit). The techniques (jutsu) themselves are vehicles that allow the practitioner to approach the two higher levels of ethical behavior and spiritual insight."
+
+                                                                - John Stevens from his book 'Budo Secrets'
+
+            <footer>- John Stevens, 'Budo Secrets'</footer>
+        </blockquote>
+    </section>
+
+<section style="text-align: center;">
+    <h2>Sensei Gene Nelson</h2>
+    <img src="Symbol3.jpg" alt="Sensei Gene Nelson" style="display: block; margin: 0 auto; height: auto;">
+    <p>A fourth degree black belt, Sensei Nelson has been studying Aikido for over 40 years and instructs the majority of the classes.</p>
+</section>
+
+    <section>
+        <h2>Class Schedule</h2>
+<div class="schedule-container">
+    <ul class="schedule">
+        <li><strong>Monday: </strong> 7:15 - 8:30 PM</li>
+        <li><strong>Tuesday: </strong> <a href="https://www.spokanemartialarts.com" target="_blank">Integrity Martial Arts Taekwondo</a></li>
+        <li><strong>Wednesday: </strong> 7:15 - 8:30 PM</li>
+        <li><strong>Thursday: </strong><a href="https://www.spokanemartialarts.com" target="_blank">Integrity Martial Arts Taekwondo</a></li>
+        <li><strong>Friday: </strong> 7:15 - 8:30 PM</li>
+    </ul>
+    
+    <img src="Shoman.jpg" alt="Aikido Class Image" style="width: 300px; height: auto; margin-right: 10%">
+</div>
+
+        <blockquote>
+             In my Aikido, there are no opponents, no enemies. I do not want to overwhelm everyone with brute strength, nor do I want to smash every challenger to the ground. In true Budo, there are no opponents, no enemies. In true Budo we seek to be one with all things, to return to the heart of creation. The purpose of Aikido training is not to make you simply stronger or tougher than others; it is to make you a warrior for world peace.
+
+                                    This is our mission in Aikido.    
+            <footer>- Morihei Ueshiba, founder of Aikido</footer>
+        </blockquote>
+		
+		<ul>
+            <li>All students are required to provide proof of COVID vaccination</li>
+            <li>Thank you for understanding with these health requirements</li>
+        </ul>
+    </section>
+
+    <section>
+<div class="contact-container">
+    <div class="contact-info">
+        <h2>Contact Us</h2>
+        <p>Better yet, see us in person and watch Aikido in action!</p>
+        <p>Phone: (509) 768 - 8534</p>
+        <p>2704 North Hogan Street, Spokane, WA 99207</p>
+    </div>
+    
+    <img src="map.jpg" alt="Aikido Class" class="contact-image">
+</div>
+    </section>
+	
+	<section>
+    <h2>Useful Links</h2>
+    <ul style="list-style-type: none; padding: 0;">
+        <li><a href="https://www.aikidoprimer.com" target="_blank" style="text-decoration: none; color: #333;">Aikido Primer</a></li>
+        <li><a href="https://www.aikiweb.com" target="_blank" style="text-decoration: none; color: #333;">AikiWeb</a></li>
+        <li><a href="https://www.aikidoFAQ.com" target="_blank" style="text-decoration: none; color: #333;">AikidoFAQ</a></li>
+        <li><a href="https://www.aikidoinfo.com/osensei_quotes" target="_blank" style="text-decoration: none; color: #333;">O Sensei's Quotes</a></li>
+        <li><a href="https://www.asu.com" target="_blank" style="text-decoration: none; color: #333;">Aikido Schools of Ueshiba</a></li>
+        <li><a href="https://www.spokanemartialarts.com" target="_blank" style="text-decoration: none; color: #333;">Integrity Martial Arts</a></li>
+    </ul>
+</section>
+
+    <footer>
+        <p>Aikido Bushin ~ www.AikidoSpokane.com (509) 768-8534</p>
+        <p>Proud affiliate of Aikido Schools of Ueshiba</p>
+        <p>© 2025 AikidoSpokane - All Rights Reserved.</p>
+    </footer>
+
+</body></html>
